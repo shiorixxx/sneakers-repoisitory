@@ -1,0 +1,15 @@
+@use "config/responsive" as r;
+@use "common" as c;
+
+.pickup-item {
+  margin: 10px;
+
+  img {
+    height: 257px;
+    object-fit: cover;
+  }
+}
+
+.pickup {
+  margin-bottom: 110px;
+}

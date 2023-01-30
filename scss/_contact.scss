@@ -1,0 +1,56 @@
+@use "config/responsive" as r;
+@use "common" as c;
+
+.contact {
+  .form-inner {
+    text-align: left;
+    display: grid;
+    gap: 139px;
+    grid-template-columns: 1fr 1fr;
+    @include r.mq(sp) {
+      display: block;
+    }
+  }
+  .contact-items {
+    text-align: left;
+    p {
+      margin-bottom: 36px;
+    }
+  }
+  background-color: #121212;
+  color: #fff;
+  padding: 60px 0 10px;
+  .section_title {
+    color: #fff;
+  }
+  label {
+    margin-bottom: 1%;
+    display: block;
+  }
+
+  .form-text {
+    height: 2.4rem;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  textarea {
+    height: 68px;
+    width: 100%;
+    background-color: #fff;
+  }
+  .form-item {
+    margin-bottom: 23px;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+    font-size: 1.4rem;
+
+    width: 200px;
+    background-color: #121212;
+    border: #fff 1px solid;
+  }
+}

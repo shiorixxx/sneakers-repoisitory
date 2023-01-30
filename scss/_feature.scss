@@ -1,0 +1,41 @@
+@use "config/responsive" as r;
+@use "common" as c;
+.feature {
+  margin-bottom: 60px;
+
+  .grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); //300pxの要素で
+  }
+  .feature-inner {
+    box-shadow: 0 0 8px 4px #ccc;
+  }
+  .feature-img {
+    height: 257px;
+    overflow: hidden;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .feature-textarea {
+    padding: 31px 42px;
+    text-align: left;
+    span {
+      display: block;
+      margin-bottom: 24px;
+    }
+
+    .text {
+      line-height: 1.69;
+      margin-bottom: 41px;
+    }
+
+    .time {
+      width: 100%;
+      text-align: right;
+    }
+  }
+}

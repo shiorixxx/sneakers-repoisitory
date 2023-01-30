@@ -1,0 +1,22 @@
+@use "config/responsive" as r;
+@use "common" as c;
+
+.mainvisual {
+  @include r.mq(pc) {
+    height: 700px;
+    overflow: hidden;
+    margin-bottom: 110px;
+  }
+
+  @include r.mq(sp) {
+    margin-bottom: 87px;
+  }
+
+  img {
+    @include r.mq(sp) {
+      height: 100vh;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
